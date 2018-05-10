@@ -1,5 +1,4 @@
-{% assign posts = site.posts %}
-{% if site.paginate > 0 %}{% assign posts = paginator.posts %}{% endif %}
+{% assign posts = paginator.posts %}
 
 <section id="posts" class="posts-expand">
   {% for post in posts %}
